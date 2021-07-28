@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:windmill motor series-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -86,28 +85,6 @@ Wire Wire Line
 	7400 3450 7400 2900
 Connection ~ 6850 3450
 $Comp
-L power:GND #PWR0101
-U 1 1 61012945
-P 7400 2900
-F 0 "#PWR0101" H 7400 2650 50  0001 C CNN
-F 1 "GND" H 7405 2727 50  0000 C CNN
-F 2 "" H 7400 2900 50  0001 C CNN
-F 3 "" H 7400 2900 50  0001 C CNN
-	1    7400 2900
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+12V #PWR0102
-U 1 1 61013073
-P 7400 2200
-F 0 "#PWR0102" H 7400 2050 50  0001 C CNN
-F 1 "+12V" H 7415 2373 50  0000 C CNN
-F 2 "" H 7400 2200 50  0001 C CNN
-F 3 "" H 7400 2200 50  0001 C CNN
-	1    7400 2200
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:D_Bridge_+AA- BridgeRectifier2
 U 1 1 61015125
 P 4500 4450
@@ -174,28 +151,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 6150 7450 5600
 Connection ~ 6900 6150
-$Comp
-L power:GND #PWR0103
-U 1 1 61015159
-P 7450 5600
-F 0 "#PWR0103" H 7450 5350 50  0001 C CNN
-F 1 "GND" H 7455 5427 50  0000 C CNN
-F 2 "" H 7450 5600 50  0001 C CNN
-F 3 "" H 7450 5600 50  0001 C CNN
-	1    7450 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+12V #PWR0104
-U 1 1 61015163
-P 7450 4900
-F 0 "#PWR0104" H 7450 4750 50  0001 C CNN
-F 1 "+12V" H 7465 5073 50  0000 C CNN
-F 2 "" H 7450 4900 50  0001 C CNN
-F 3 "" H 7450 4900 50  0001 C CNN
-	1    7450 4900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4500 3700 2100 3700
 Wire Wire Line
@@ -210,46 +165,30 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male +Out1
 U 1 1 6101AECC
-P 8100 2600
-F 0 "+Out1" H 8072 2482 50  0000 R CNN
-F 1 "-Out" H 8072 2573 50  0000 R CNN
-F 2 "Connectors_WAGO:WAGO_734_2pin_Straight_RuggedPads" H 8100 2600 50  0001 C CNN
-F 3 "~" H 8100 2600 50  0001 C CNN
-	1    8100 2600
+P 9250 2600
+F 0 "+Out1" H 9222 2482 50  0000 R CNN
+F 1 "-Out" H 9222 2573 50  0000 R CNN
+F 2 "Connectors_WAGO:WAGO_734_2pin_Straight_RuggedPads" H 9250 2600 50  0001 C CNN
+F 3 "~" H 9250 2600 50  0001 C CNN
+	1    9250 2600
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male +Out2
 U 1 1 6101CD8E
-P 8100 5300
-F 0 "+Out2" H 8072 5182 50  0000 R CNN
-F 1 "-Out" H 8072 5273 50  0000 R CNN
-F 2 "Connectors_WAGO:WAGO_734_2pin_Straight_RuggedPads" H 8100 5300 50  0001 C CNN
-F 3 "~" H 8100 5300 50  0001 C CNN
-	1    8100 5300
+P 9250 5300
+F 0 "+Out2" H 9222 5182 50  0000 R CNN
+F 1 "-Out" H 9222 5273 50  0000 R CNN
+F 2 "Connectors_WAGO:WAGO_734_2pin_Straight_RuggedPads" H 9250 5300 50  0001 C CNN
+F 3 "~" H 9250 5300 50  0001 C CNN
+	1    9250 5300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7400 1750 7900 1750
-Wire Wire Line
-	7900 1750 7900 2500
 Connection ~ 7400 1750
-Wire Wire Line
-	7900 2600 7900 3450
 Wire Wire Line
 	6850 3450 7400 3450
 Connection ~ 7400 3450
-Wire Wire Line
-	7400 3450 7900 3450
-Wire Wire Line
-	7450 4450 7900 4450
-Wire Wire Line
-	7900 4450 7900 5200
 Connection ~ 7450 4450
-Wire Wire Line
-	7900 5300 7900 6150
-Wire Wire Line
-	7900 6150 7450 6150
 Connection ~ 7450 6150
 $Comp
 L Device:D_Bridge_+AA- BridgeRectifier1
@@ -262,4 +201,114 @@ F 3 "~" H 4450 1750 50  0001 C CNN
 	1    4450 1750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND1 #PWR02
+U 1 1 6101AC1F
+P 7400 2900
+F 0 "#PWR02" H 7400 2650 50  0001 C CNN
+F 1 "GND1" H 7405 2727 50  0000 C CNN
+F 2 "" H 7400 2900 50  0001 C CNN
+F 3 "" H 7400 2900 50  0001 C CNN
+	1    7400 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND2 #PWR04
+U 1 1 6101D1AC
+P 7450 5600
+F 0 "#PWR04" H 7450 5350 50  0001 C CNN
+F 1 "GND2" H 7455 5427 50  0000 C CNN
+F 2 "" H 7450 5600 50  0001 C CNN
+F 3 "" H 7450 5600 50  0001 C CNN
+	1    7450 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 6101DA99
+P 7400 2200
+F 0 "#PWR01" H 7400 2050 50  0001 C CNN
+F 1 "VCC" H 7415 2373 50  0000 C CNN
+F 2 "" H 7400 2200 50  0001 C CNN
+F 3 "" H 7400 2200 50  0001 C CNN
+	1    7400 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR03
+U 1 1 6101ED7E
+P 7450 4900
+F 0 "#PWR03" H 7450 4750 50  0001 C CNN
+F 1 "VDD" H 7465 5073 50  0000 C CNN
+F 2 "" H 7450 4900 50  0001 C CNN
+F 3 "" H 7450 4900 50  0001 C CNN
+	1    7450 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 61027298
+P 8000 3900
+F 0 "JP1" V 7954 3968 50  0000 L CNN
+F 1 "+ve tie" V 8045 3968 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8000 3900 50  0001 C CNN
+F 3 "~" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 6102784D
+P 8400 4200
+F 0 "JP2" V 8354 4268 50  0000 L CNN
+F 1 "-ve tie" V 8445 4268 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8400 4200 50  0001 C CNN
+F 3 "~" H 8400 4200 50  0001 C CNN
+	1    8400 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 4450 8000 4050
+Wire Wire Line
+	7450 4450 8000 4450
+Wire Wire Line
+	8000 4450 8850 4450
+Wire Wire Line
+	8850 4450 8850 5200
+Wire Wire Line
+	8850 5200 9050 5200
+Connection ~ 8000 4450
+Wire Wire Line
+	8400 3450 8400 4050
+Wire Wire Line
+	7400 3450 8400 3450
+Wire Wire Line
+	8400 4350 8400 6150
+Wire Wire Line
+	7450 6150 8400 6150
+Wire Wire Line
+	8400 6150 8850 6150
+Wire Wire Line
+	8850 6150 8850 5300
+Wire Wire Line
+	8850 5300 9050 5300
+Connection ~ 8400 6150
+Wire Wire Line
+	9050 2600 8850 2600
+Wire Wire Line
+	8850 2600 8850 3450
+Wire Wire Line
+	8850 3450 8400 3450
+Connection ~ 8400 3450
+Wire Wire Line
+	9050 2500 8850 2500
+Wire Wire Line
+	8850 2500 8850 1750
+Wire Wire Line
+	7400 1750 8000 1750
+Wire Wire Line
+	8000 3750 8000 1750
+Connection ~ 8000 1750
+Wire Wire Line
+	8000 1750 8850 1750
 $EndSCHEMATC
