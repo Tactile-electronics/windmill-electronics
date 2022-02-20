@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "CustomComponents")(type "KiCad")(uri "/home/adrian/sandbox/projects/mcqn-kicad-lib/CustomComponents.kicad_sym")(options "")(descr ""))
+)
